@@ -56,7 +56,7 @@ const Contact = () => {
           <div className="w-full md:w-1/2 text-left">
             Your Name
             <input
-              className="w-full border border-gray-300 rounded py-3 px-4 mt-2"
+              className="w-full border border-gray-300 rounded py-3 px-4 mt-2  focus:outline-none focus:ring focus:ring-gray-500 focus:border-gray-800"
               type="text"
               name="Name"
               placeholder="Your Name"
@@ -66,7 +66,7 @@ const Contact = () => {
           <div className="w-full md:w-1/2 text-left md:pl-4">
             Your Email
             <input
-              className="w-full border border-gray-300 rounded py-3 px-4 mt-2"
+              className="w-full border border-gray-300 rounded py-3 px-4 mt-2 focus:outline-none focus:ring focus:ring-gray-500 focus:border-gray-800 "
               type="email"
               name="Email"
               placeholder="Your Email"
@@ -80,10 +80,10 @@ const Contact = () => {
             name="Message"
             placeholder="message"
             required
-            className="w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none"
+            className="w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none focus:outline-none focus:ring focus:ring-gray-500 focus:border-gray-800"
           ></textarea>
         </div>
-        <button className="bg-gray-600 hover:bg-gray-900 text-white px-12 py-2 mb-10 rounded ">
+        <button className="bg-gray-600 hover:bg-gray-900 text-white px-12 py-2 mb-10 rounded  ">
           {result ? result : "Send Message"}
         </button>
       </form>

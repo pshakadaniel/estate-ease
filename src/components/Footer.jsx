@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 const Footer = () => {
   return (
     <div
-      className="pt-4 px-4 md:px-20 lg:px-32 w-full text-center bg-gray-900 overflow-hidden"
+      className="py-10 px-4 md:px-20 lg:px-32 w-full text-center bg-gray-900 overflow-hidden"
       id="Footer"
     >
       <div className="container mx-auto flex flex-col items-start md:flex-row justify-between ">
@@ -60,7 +60,7 @@ const Footer = () => {
               type="email"
               placeholder="Enter Your Email"
               name=""
-              className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline-none w-full md:w-auto"
+              className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 w-full md:w-auto focus:outline-none focus:ring focus:ring-gray-500 focus:border-gray-800"
             />
             <button className="py-2 px-4 rounded bg-gray-600 hover:bg-gray-700 text-white">
               Subscribe

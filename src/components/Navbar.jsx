@@ -38,7 +38,7 @@ const Navbar = () => {
         <a href="#Header">
           <img src={assets.logo} alt="" className="cursor-pointer  " />
         </a>
-        <ul className="hidden md:flex gap-7 text-white">
+        <ul className="hidden md:flex gap-12 text-white">
           <a href="#Header" className="cursor-pointer hover:text-gray-400">
             Home
           </a>
