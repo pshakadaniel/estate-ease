@@ -23,16 +23,16 @@ const Header = () => {
         <h2 className="text-5xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20">
           Explore home that fit your dreams
         </h2>
-        <div className="space-x-6 mt-16">
+        <div className="space-x-8 mt-16">
           <a
             href="#Project"
-            className="border border-white px-8 py-3 rounded hover:border-gray-900"
+            className="border border-white px-8 py-3 rounded hover:bg-gray-800"
           >
             Projects
           </a>
           <a
             href="#Contact"
-            className="bg-gray-800 hover:bg-gray-900 border-white px-8 py-3 rounded "
+            className="bg-gray-800 hover:bg-gray-900 hover:border hover:border-gray-500 px-8 py-3 rounded "
           >
             Contact Us
           </a>

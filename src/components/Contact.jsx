@@ -74,7 +74,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="my-6 text-left">
+        <div className="my-2 text-left">
           Message
           <textarea
             name="Message"
