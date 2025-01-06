@@ -17,10 +17,17 @@ const Footer = () => {
             />
           </a>
           <p className="text-gray-400 mt-4 text-start">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-            laborum? Corporis facilis omnis veniam reiciendis minus quod vero id
-            nobis iste! Corporis ut nobis id, sequi delectus cupiditate dolores
-            vel?
+            🏡 Your Dream Home Awaits! Discover the perfect place to call home
+            with Estate | Ease. Your journey to comfort, style, and happiness
+            starts here. 📞{" "}
+            <a
+              href="#Contact"
+              className="text-gray-200 underline underline-offset-4"
+            >
+              Contact us
+            </a>{" "}
+            today to take the first step toward your new chapter. ✨ Your future
+            begins with us.
           </p>
         </div>
         <div className="flex flex-col items-start ">

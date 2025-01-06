@@ -18,7 +18,7 @@ const About = () => {
         </span>
       </h1>
       <p className="text-gray-500 max-w-80 text-center mb-8">
-        Passionat About Properties, Dedicated to Your Visitor
+        Building Dreams, One Property at a Time
       </p>
       <div className="flex flex-col md:flex-row item-center md:item-start md:gap-20">
         <img
@@ -46,10 +46,13 @@ const About = () => {
             </div>
           </div>
           <p className="my-10 max-w-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            nesciunt quaerat quos quidem laboriosam nihil deleniti voluptatem,
-            ut, corporis iste in sunt vero, obcaecati architecto sapiente
-            dolores totam molestiae. Tenetur?
+            <i className="font-bold">
+              Passionate About Properties, Dedicated to Excellence.
+            </i>{" "}
+            <br />
+            For over a decade, we've been redefining real estate with innovative
+            designs, impeccable quality, and customer satisfaction. Let me know
+            if you'd like more customization!
           </p>
           <button className="bg-gray-600 hover:bg-gray-900 text-white px-8 py-2 rounded ">
             Learn More
