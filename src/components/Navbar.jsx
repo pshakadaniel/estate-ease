@@ -65,7 +65,7 @@ const Navbar = () => {
       {/*----------hambuger menu----------------*/}
       <div
         className={`md:hidden ${
-          showMenu ? "fixed w-full" : "w-0 h-0"
+          showMenu ? "fixed w-full z-50" : "w-0 h-0"
         } right-0 top-0 bottom-0 overflow-hidden bg-white transition-all duration-500 ease-in-out`}
       >
         <div className="flex justify-end p-6 cursor-pointer">
