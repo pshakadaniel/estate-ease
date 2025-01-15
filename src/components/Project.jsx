@@ -26,7 +26,6 @@ const Project = () => {
       <p className="text-center text-gray-500 mb-8 max-w-80 mx-auto">
         Crafting spaces, Building Legacies - Explore Our Portfolio
       </p>
-
       {/* Swiper Slider */}
       <Swiper
         modules={[Navigation, Pagination]}
@@ -49,11 +48,11 @@ const Project = () => {
             slidesPerView: 1, // Show 1 slide at once on smaller screens
           },
         }}
-        className=""
+        className="relative -z-50" // Set z-index to -10
       >
         {projectsData.map((project, index) => (
           <SwiperSlide key={index} className="relative z-1">
-            <div className=" w-full h-96 ">
+            <div className="w-full h-96">
               <img src={project.image} alt={project.title} />
               <div className="absolute right-0 bottom-10 flex justify-center">
                 <div className="flex flex-col bg-white px-4 py-2 shadow-md">
@@ -70,6 +69,7 @@ const Project = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      ;
     </motion.div>
   );
 };

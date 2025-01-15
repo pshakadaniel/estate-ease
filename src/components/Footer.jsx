@@ -62,7 +62,7 @@ const Footer = () => {
               name=""
               className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 w-full md:w-auto focus:outline-none focus:ring focus:ring-gray-500 focus:border-gray-800"
             />
-            <button className="py-2 px-4 rounded bg-gray-600 hover:bg-gray-700 text-white">
+            <button className="py-2 px-4 rounded bg-gray-600 hover:bg-gray-800 text-white">
               Subscribe
             </button>
           </div>
