@@ -183,7 +183,7 @@ const Navbar = () => {
       {/* Signup/Login Modal */}
       {showSignupLogin && (
         <div className="fixed inset-0 flex justify-center items-center z-50">
-          <div className="bg-black/30 backdrop-blur-md p-6 rounded-lg flex flex-col items-end gap-2 w-full h-full sm:w-auto sm:h-auto">
+          <div className="bg-black/30 backdrop-blur-md p-6 rounded-lg flex flex-col items-end gap-2 ">
             {" "}
             <button onClick={() => setShowSignupLogin(false)}>
               <img src={assets.cross_icon} alt="" className="w-4 invert" />

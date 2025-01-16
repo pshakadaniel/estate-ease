@@ -87,7 +87,7 @@ const SignupLogin = ({ onSubmit }) => {
     setFormError({});
   };
   return (
-    <div className="bg-black/80 backdrop-blur-md p-8 rounded-lg shadow-md max-w-md w-full flex items-center justify-center">
+    <div className="bg-black/80 backdrop-blur-md p-8 rounded-lg shadow-md max-w-md w-full flex items-center justify-center m-auto">
       {isLogin ? (
         <div className="text-start">
           <h2 className="text-2xl font-bold text-white mb-6">Login</h2>
