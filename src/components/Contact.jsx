@@ -36,7 +36,7 @@ const Contact = () => {
       transition={{ duration: 1.9 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      className="text-center p-6 py-20 lg:px-32 overflow-hidden"
+      className="text-center p-6 pt-24 lg:px-32 overflow-hidden"
       id="Contact"
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">

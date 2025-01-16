@@ -72,13 +72,22 @@ const Navbar = () => {
           <a href="#Testimonial" className="cursor-pointer hover:text-gray-400">
             Testimonials
           </a>
+          <a href="#Contact" className="cursor-pointer hover:text-gray-400">
+            Contact
+          </a>
         </ul>
-        <div className="hidden md:flex items-center gap-4">
+        <div className=" md:flex items-center gap-4">
           {isAuthenticated ? (
-            <div className="flex items-center gap-2">
-              <span className="text-white"> {user?.username}</span>
+            <div className="flex md:flex-row flex-col items-center gap-2">
+              <span className=" text-gray-200 items-center">Welcome,</span>
+              <a
+                href="#Contact"
+                className="font-bold italic underline underline-offset-8 text-gray-200 md:mr-4 items-center"
+              >
+                {user?.username}
+              </a>
               <button
-                className="bg-gray-400 text-white px-4 py-2 rounded-full hover:bg-gray-700"
+                className="hidden md:flex bg-gray-400 text-white px-4 py-2 rounded-full hover:bg-gray-700"
                 onClick={handleLogout}
               >
                 Log Out
@@ -86,7 +95,7 @@ const Navbar = () => {
             </div>
           ) : (
             <button
-              className="bg-white hover:bg-gray-600 px-8 py-2 rounded-full"
+              className="hidden md:flex bg-white hover:bg-gray-600 px-8 py-2 rounded-full"
               onClick={() => setShowSignupLogin(true)}
             >
               Sign Up
@@ -144,6 +153,13 @@ const Navbar = () => {
           >
             Testimonials
           </a>
+          <a
+            onClick={() => setShowMenu(false)}
+            href="#Contact"
+            className="cursor-pointer hover:text-gray-400"
+          >
+            Contact
+          </a>
           {isAuthenticated ? (
             <button
               className="px-4 py-2 rounded-full bg-gray-500 text-white hover:bg-gray-600"
@@ -166,8 +182,9 @@ const Navbar = () => {
       </div>
       {/* Signup/Login Modal */}
       {showSignupLogin && (
-        <div className="fixed inset-0 flex justify-center items-center">
-          <div className="bg-black/30 backdrop-blur-md p-6 rounded-lg flex flex-col items-end gap-2">
+        <div className="fixed inset-0 flex justify-center items-center z-50">
+          <div className="bg-black/30 backdrop-blur-md p-6 rounded-lg flex flex-col items-end gap-2 w-full h-full sm:w-auto sm:h-auto">
+            {" "}
             <button onClick={() => setShowSignupLogin(false)}>
               <img src={assets.cross_icon} alt="" className="w-4 invert" />
             </button>

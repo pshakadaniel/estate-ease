@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { motion } from "framer-motion";
-
 const Project = () => {
   return (
     <motion.div
@@ -14,7 +13,7 @@ const Project = () => {
       transition={{ duration: 1.9 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      className="container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 w-full overflow-hidden"
+      className="container mx-auto py-4 pt-24 px-6 md:px-20 lg:px-32 w-full overflow-hidden"
       id="Project"
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
@@ -48,11 +47,11 @@ const Project = () => {
             slidesPerView: 1, // Show 1 slide at once on smaller screens
           },
         }}
-        className="relative -z-50" // Set z-index to -10
+        className=""
       >
         {projectsData.map((project, index) => (
-          <SwiperSlide key={index} className="relative z-1">
-            <div className="w-full h-96">
+          <SwiperSlide key={index} className="relative z-10">
+            <div className=" w-full h-96 ">
               <img src={project.image} alt={project.title} />
               <div className="absolute right-0 bottom-10 flex justify-center">
                 <div className="flex flex-col bg-white px-4 py-2 shadow-md">
@@ -69,9 +68,7 @@ const Project = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      ;
     </motion.div>
   );
 };
-
 export default Project;

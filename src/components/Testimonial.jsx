@@ -9,7 +9,7 @@ const Testimonial = () => {
       transition={{ duration: 1.9 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      className="container mx-auto pt-20 py-10 lg:px-32 w-full overflow-hidden"
+      className="container mx-auto pt-24  lg:px-32 w-full overflow-hidden"
       id="Testimonial"
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
